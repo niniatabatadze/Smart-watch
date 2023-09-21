@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    
+<section class="sec-1">
+        <nav class="navbar navbar-expand-lg" style="margin-bottom: 100px;">
+            <div class="container">
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/Logo.png" alt="logo">
+                </a>
+                <div class="d-lg-none icons d-flex justify-content-center">
+                    <img src="images/Search.png" alt="search">
+                    <img src="images/Person.png" alt="person">
+                    <a href="#" data-product-count="0" id="cart-icon">
+                        <img src="images/Shopping Cart.png" alt="shopping">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav"style="
+    gap: 10px;
+">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index4.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropdown-butn">
+                                    <a class="menu-4" href="#">Brands<i class="fa fa-caret-down"></i></a>
+                                </button>
+                                <div class="dropdown1">
+                                    <a href="index7.html">Apple</a>
+                                    <a href="index8.htmlndex8.html">Samsung</a>
+                                    <a href="index9.html">Xiaomi</a>
+
+                                    <a href="index10.html">Fitbit</a>
+
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index2.html">Recent Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index5.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  class="nav-link" href="index6.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icons  d-lg-flex d-none justify-content-center">
+                    <img src="images/Search.png" alt="search">
+                    <img src="images/Person.png" alt="person">
+                    <img src="images/Shopping Cart.png" alt="shopping">
+                </div>
+            </div>
+            </div>
+        </nav>  
+
+        <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-4">
+                <img src="./images/1.png" alt="" >
+            </div>
+            
+     
+            </div>
+            <div class="col-md-6 ms-0 mt-0 col-12">
+                <div class="container ">
+                    <div class="container " style="
+                    margin-top: 3rem;
+                ">
+                        <h5 class="account mt-5">Create Account</h5>
+                        <p class="details">Welcome! Enter Your Details And Start<br> Creating, Collecting And Selling Watch.
+                        </p>
+    
+                        <div class="col-md-6 mt-0 col-12">
+                            <form id="registrationForm" action="index4.html" style="margin-top: 3rem;">
+                        
+                                <div class="form-group mb-3">
+    
+    
+                                    <div class="form-group mb-3 inputWithIcon">
+    
+                                        <input type="text"  id="username"  placeholder="Username"
+                                            style="background-position-x: 5%; border: none;background-position-y: center;padding-left: 50px;height: 46px;background-image: url(Images/User.png);background-repeat: no-repeat;"
+                                            class="w-100   rounded-4" required>
+                                    </div>
+                                    <div class="form-group mb-3 inputWithIcon">
+    
+                                        <input type="email" id="email" placeholder="Email Address"
+                                            style="background-position-x: 5%; border: none;background-position-y: center;padding-left: 50px;height: 46px;background-image: url(Images/EnvelopeSimple\ \(2\).png);background-repeat: no-repeat;"
+                                            class="w-100   rounded-4" required>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="password" id="password1"   placeholder="Password"
+                                            style="background-position-x: 5%; border: none;background-position-y: center;padding-left: 50px;height: 46px;background-image: url(Images/LockKey.png);background-repeat: no-repeat;"
+                                             class="w-100 rounded-4" required>
+                                    </div>
+                                    <div class="form-group mb-3">
+    
+                                        <input type="password" id="password2" placeholder="Confirm Password"
+                                            style="background-position-x: 5%; border: none;background-position-y: center;padding-left: 50px;height: 46px;background-image: url(Images/LockKey.png);background-repeat: no-repeat;"
+                                            class="w-100 rounded-4" required>
+                                    </div>
+                                    <div class="form-group d-grid">
+                                        <input type="submit" style="background: #4009d5; border: none; height: 46px;"
+                                            value="Create account" class="w-100 rounded-4 mt-3 btn btn-success ps-4">
+                                    </div>
+                            </form>
+                        </div>
+    
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        </div>
+        
+        </div>
+        <div class="section-3">
+            <div class="col-12">
+                <div class="footer">
+                    Copyright @ 2022 | Mohid
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+
+function validateForm() {
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    if (username === "") {
+        alert("Please enter a username");
+        return false;
+    }
+
+    if (email === "") {
+        alert("Please enter an email address");
+        return false;
+    }
+
+    if (password === "") {
+        alert("Please enter a password");
+        return false;
+    }
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match");
+        return false;
+    }
+    return true;
+}
+document.getElementById('registrationForm').addEventListener('submit', function (e) {
+    if (!validateForm()) {
+        e.preventDefault(); 
+    }
+});
+
+</script>
+</html>

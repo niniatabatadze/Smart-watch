@@ -30,10 +30,7 @@ axios.get("https://fakestoreapi.com/products")
             additions.appendChild(addToCartLink);
 
           
-            var wishListImage = document.createElement("img");
-            wishListImage.className = "productadd2";
-            wishListImage.src = "images/Wish list.png";
-            additions.appendChild(wishListImage);
+
 
             productCard.appendChild(additions);
 
